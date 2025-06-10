@@ -1,0 +1,43 @@
+@Eva2_HostAddress = https://localhost:5171/api
+
+### Obtener todos los libros
+GET {{Eva2_HostAddress}}/books
+Accept: application/json
+
+###
+
+### Obtener un libro por ID
+GET {{Eva2_HostAddress}}/books/{{id}}
+Accept: application/json
+
+###
+
+### Crear un nuevo libro
+POST {{Eva2_HostAddress}}/books
+Content-Type: application/json
+
+{
+  "title": "Cien Años de Soledad",
+  "author": "Gabriel García Márquez",
+  "isbn": "9780307474728",
+  "publishedDate": "1967-05-30T00:00:00"
+}
+
+###
+
+### Actualizar un libro existente (reemplaza {{id}})
+PUT {{Eva2_HostAddress}}/books/{{id}}
+Content-Type: application/json
+
+{
+  "id": "{{id}}",
+  "title": "Cien Años de Soledad (Edición Revisada)",
+  "author": "Gabriel García Márquez",
+  "isbn": "9780307474728",
+  "publishedDate": "1967-05-30T00:00:00"
+}
+
+###
+
+### Eliminar un libro (reemplaza {{id}})
+DELETE {{Eva2_HostAddress}}/books/{{id}}

@@ -1,0 +1,574 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Biblioteca",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Devoluciones": {
+      "post": {
+        "tags": [
+          "Devoluciones"
+        ],
+        "summary": "Registrar la devolución de un libro",
+        "requestBody": {
+          "description": "Datos de la devolución.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Devolucion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Devolucion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Devolucion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Devolucion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Devolucion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Devolucion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Libros": {
+      "get": {
+        "tags": [
+          "Libros"
+        ],
+        "summary": "Lista todos los libros",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Libro"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Libro"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Libro"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Libros"
+        ],
+        "summary": "Crea un nuevo libro",
+        "requestBody": {
+          "description": "Datos del libro.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Libros/{id}": {
+      "get": {
+        "tags": [
+          "Libros"
+        ],
+        "summary": "Muestra los detalles de un libro",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID del libro.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Libro"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Libros"
+        ],
+        "summary": "Edita la información de un libro",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID del libro a actualizar.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Datos actualizados del libro.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Libro"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Libros"
+        ],
+        "summary": "Elimina un libro",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID del libro a eliminar.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Prestamos": {
+      "post": {
+        "tags": [
+          "Prestamos"
+        ],
+        "summary": "Registrar un nuevo préstamo",
+        "requestBody": {
+          "description": "Datos del préstamo.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Prestamo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Prestamo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Prestamo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Prestamo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Prestamo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Prestamo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Lista todos los usuarios",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Registrar un nuevo usuario",
+        "requestBody": {
+          "description": "Datos del usuario.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/{id}/prestamos": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Devolucion": {
+        "required": [
+          "prestamoId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "prestamoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "prestamo": {
+            "$ref": "#/components/schemas/Prestamo"
+          },
+          "fechaDevolucion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Libro": {
+        "required": [
+          "autor",
+          "fechaPublicacion",
+          "isbn",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "titulo": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "autor": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "isbn": {
+            "minLength": 1,
+            "pattern": "^\\d{10}(\\d{3})?$",
+            "type": "string"
+          },
+          "fechaPublicacion": {
+            "type": "string",
+            "format": "date"
+          },
+          "cantidad": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Prestamo": {
+        "required": [
+          "libroId",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "libroId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "libro": {
+            "$ref": "#/components/schemas/Libro"
+          },
+          "fechaPrestamo": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "required": [
+          "apellido",
+          "correo",
+          "nombre",
+          "rut",
+          "telefono"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "rut": {
+            "minLength": 1,
+            "pattern": "^\\d{1,2}\\.?\\d{3}\\.?\\d{3}-?[\\dkK]$",
+            "type": "string"
+          },
+          "nombre": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "apellido": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "correo": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "telefono": {
+            "minLength": 1,
+            "pattern": "^\\d{9}$",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

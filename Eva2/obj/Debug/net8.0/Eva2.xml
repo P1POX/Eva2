@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eva2</name>
+    </assembly>
+    <members>
+        <member name="M:Eva2.Controllers.DevolucionesController.CrearDevolucion(Eva2.Models.Entities.Devolucion)">
+            <summary>
+            Registrar la devolución de un libro
+            </summary>
+            <param name="devolucion">Datos de la devolución.</param>
+            <returns>Devolución creada.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.LibrosController.GetBooks">
+            <summary>
+            Lista todos los libros
+            </summary>
+            <returns>Lista de libros.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.LibrosController.GetBook(System.Guid)">
+            <summary>
+            Muestra los detalles de un libro
+            </summary>
+            <param name="id">ID del libro.</param>
+            <returns>El libro solicitado, si existe.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.LibrosController.CreateBook(Eva2.Models.Entities.Libro)">
+            <summary>
+            Crea un nuevo libro
+            </summary>
+            <param name="libro">Datos del libro.</param>
+            <returns>El libro creado.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.LibrosController.UpdateBook(System.Guid,Eva2.Models.Entities.Libro)">
+            <summary>
+            Edita la información de un libro
+            </summary>
+            <param name="id">ID del libro a actualizar.</param>
+            <param name="libro">Datos actualizados del libro.</param>
+            <returns>Sin contenido si se actualizó correctamente.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.LibrosController.DeleteBook(System.Guid)">
+            <summary>
+            Elimina un libro
+            </summary>
+            <param name="id">ID del libro a eliminar.</param>
+            <returns>Sin contenido si se eliminó correctamente, o error si está prestado.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.PrestamosController.CrearPrestamo(Eva2.Models.Entities.Prestamo)">
+            <summary>
+            Registrar un nuevo préstamo 
+            </summary>
+            <param name="prestamo">Datos del préstamo.</param>
+            <returns>El préstamo creado.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.UsuariosController.GetUsuarios">
+            <summary>
+            Lista todos los usuarios
+            </summary>
+            <returns>Lista de usuarios.</returns>
+        </member>
+        <member name="M:Eva2.Controllers.UsuariosController.CrearUsuario(Eva2.Models.Entities.Usuario)">
+            <summary>
+            Registrar un nuevo usuario 
+            </summary>
+            <param name="usuario">Datos del usuario.</param>
+            <returns>El usuario creado.</returns>
+        </member>
+        <member name="T:Eva2.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Eva2.Migrations.OtherEntities">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.OtherEntities.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.OtherEntities.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Eva2.Migrations.OtherEntities.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

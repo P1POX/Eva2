@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\net\\Eva2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|c:\\net\\eva2\\eva2\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|solutionrelative:eva2\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|c:\\net\\eva2\\eva2\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|solutionrelative:eva2\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|c:\\net\\eva2\\eva2\\controllers\\devolucionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|solutionrelative:eva2\\controllers\\devolucionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|c:\\net\\eva2\\eva2\\models\\entities\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8431B648-8582-4CE9-BF70-0B4CC0FF4B58}|Eva2\\Eva2.csproj|solutionrelative:eva2\\models\\entities\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DevolucionesController.cs",
+              "DocumentMoniker": "C:\\net\\Eva2\\Eva2\\Controllers\\DevolucionesController.cs",
+              "RelativeDocumentMoniker": "Eva2\\Controllers\\DevolucionesController.cs",
+              "ToolTip": "C:\\net\\Eva2\\Eva2\\Controllers\\DevolucionesController.cs",
+              "RelativeToolTip": "Eva2\\Controllers\\DevolucionesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T00:14:39.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Prestamo.cs",
+              "DocumentMoniker": "C:\\net\\Eva2\\Eva2\\Models\\Entities\\Prestamo.cs",
+              "RelativeDocumentMoniker": "Eva2\\Models\\Entities\\Prestamo.cs",
+              "ToolTip": "C:\\net\\Eva2\\Eva2\\Models\\Entities\\Prestamo.cs",
+              "RelativeToolTip": "Eva2\\Models\\Entities\\Prestamo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T00:13:57.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "C:\\net\\Eva2\\Eva2\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Eva2\\Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\net\\Eva2\\Eva2\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Eva2\\Controllers\\LibrosController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T23:07:39.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\net\\Eva2\\Eva2\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Eva2\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\net\\Eva2\\Eva2\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Eva2\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T23:07:38.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
